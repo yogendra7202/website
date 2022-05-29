@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+</head>
+<body>
+	<img src="images/wave.png" class="background">
+	<img src="images/img.svg" class="sticker-img">
+	<div class="form-container">
+			<button class="toggle-btn" id="loginbtn" onclick="login()"><h2><span>or</span>Login</h2></button>
+			<button class="toggle-btn" id="signupbtn" onclick="signup()"><h2><span>or</span>Sign up</h2></button>
+		<form class="input-group" id="login">
+			<img src="team/avatar.svg" class="avatar">
+			<div class="input-box">
+				<i class="fas fa-user"></i>
+				<input type="text" name="username" placeholder="Username" required>
+			</div>
+			<div class="input-box">
+				<i class="fas fa-lock"></i>
+				<input type="password" name="Password" placeholder="Password" id="pswd" required>
+				<span class="fas fa-eye-slash" id="eye" onclick="showhide()"></span>
+			</div>
+			<button name="login" class="btn">Login</button>
+			<br><a href="#">Forget Password?</a>
+		</form>
+		<form class="input-group signup" id="signup">
+			<div class="input-box">
+				<i class="fas fa-user"></i>
+				<input type="text" name="name" placeholder="Name" required>
+			</div>
+			<div class="input-box">
+				<i class="fas fa-envelope"></i>
+				<input type="email" name="email" placeholder="Email" required>
+			</div>
+			<div class="input-box">
+				<i class="fas fa-lock"></i>
+				<input type="password" name="Password" placeholder="Password" id="pswd1" onkeyup="validate();" required>
+				<span class="fas fa-eye-slash" id="eye1" onclick="showhide1()"></span>
+				<div id="validation-txt"></div>
+			</div>
+			<button name="signup" class="btn">Sign up</button>
+			<br><a href="#">Terms & Conditions?</a>
+		</form>
+	</div>
+
+	<script src="js/form.js"></script>
+
+</body>
+</html>

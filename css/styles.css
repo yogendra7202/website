@@ -1,0 +1,652 @@
+*{
+	padding: 0;
+	margin: 0;
+	outline: none;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+html{ scroll-behavior: smooth; transition: .8s; }
+#top-btn{
+	display: none;
+	position: fixed;
+	z-index: 99;
+	bottom: 30px;
+	right: 30px;
+	border: none;
+	outline: none;
+	background: #999999d1;
+	color: #fff;
+	cursor: pointer;
+	padding: 5px 12px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 6px black;
+	font-size: 24px;
+}
+#top-btn:hover{
+	background: #00a1ff;
+}
+.menu{
+	position: fixed;
+	height: 60px;
+	line-height: 60px;
+	transition: 0.4s;
+}
+
+/*------------------------------------------------------navbar-----------------------------------------*/
+nav{
+	position: absolute;
+	top: 0;
+	height: 80px;
+	line-height: 80px;
+	z-index: 20;
+	background-color: white;
+	box-shadow: 0px 0px 8px #007dc5;
+	width: 100%;
+}
+.logo{
+	font: italic 40px ravie;
+	text-shadow: 1px 1px 5px skyblue;
+	vertical-align: middle;
+	color: #007dc5;
+	margin-left: 100px;
+}
+nav ul{
+	float: right;
+	margin-right: 20px;
+}
+nav ul li{
+	display: inline-block;
+	width: 90px;
+	height: 0px;
+	text-align: center;
+}
+#dropdown{ height: 100%; }
+nav ul ul{
+	background: #fff;
+	border: 1px solid #d4d4d4;
+	width: 120px;
+	margin-right: -10px;
+	position: relative;
+	box-shadow: 1px 1px 5px #007dc5;
+}
+nav ul ul li{ width: 100%; }
+nav ul ul ul{
+	position: absolute;
+	left: 112px;
+	top: 10px;
+}
+nav ul li i{ margin: 4px; }
+nav ul li a{
+	color: #00a1ff;
+	text-shadow: 0px 0px 5px skyblue;
+	font: 15px verdana;
+	text-transform: uppercase;
+}
+nav ul ul{ display: none; }
+nav ul li:hover > ul{ display: block; }
+nav #login{
+	background: #00a1ff;
+	color: white;
+	font: bold 14px verdana;
+	box-shadow: 1px 1px 3px blue;
+	padding: 5px 8px;
+	border-radius: 10px;
+}
+nav a.active,nav li:hover > a{
+	color: #00a1ff;
+	text-decoration: none;
+	text-shadow: none;
+	font-weight: bold;
+}
+nav #login:hover{
+	box-shadow: 2px 2px 4px blue;
+	font-size: 15px;
+	padding: 6px 9px;
+}
+.checkbtn{
+	font-size: 30px;
+	color: #007dc5;
+	float: right;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check{ display: none; }
+
+/*----------------------------------------------------slider-----------------------------------------*/
+.carousel{ margin-top: 80px; }
+.carousel-item img{
+	width: 100%;
+	height: 100%;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+	width: 40px;
+	height: 40px;
+}
+.carousel-caption{
+	background-color: rgba(0, 53, 78, 0.5);
+	width: 100%;
+	left: 0;
+}
+.carousel-indicators{
+	margin-bottom: 20px;
+}
+
+/*-----------------------------------------------------content-----------------------------------------*/
+.content{
+	float: left;
+	width: 100%;
+}
+.maincontent{ width: 100%; }
+.maincontent .left-area{ 
+	padding: 40px 40px 0px 40px;
+	float: left;
+	width: 70%;
+}
+/*------------------------------------about & service--------------------------------------------------*/
+.about-section{ 
+	background: url(../images/0.jpg) no-repeat fixed center;
+}
+.services-section{ 
+	background: url(../images/4.jpg) no-repeat fixed center;
+}
+.about-section, .services-section{
+	background-size: cover;
+	margin-bottom: 60px;
+	border-radius: 20px;
+	box-shadow: 0px 5px 8px black;
+} 
+.left-area h2{
+	width: 100%;
+	height: 65px;
+	color: white;
+	margin: 0;
+	padding-left: 40px;
+	line-height: 65px;
+	text-shadow: 3px 3px 5px black;
+	border-radius: 20px 20px 0 0; 
+	background-color: #39b6ff;
+}
+.left-area #info{ 
+	padding: 30px;
+	margin: 0; 
+	width: 100%;
+	color: white;
+	border-radius: 0 0 20px 20px;
+	background-color: rgba(60,60,60,0.8);
+}
+.left-area h3{
+	text-align: center;
+	color: white;
+	font-weight: bold;
+}
+#info img{ 
+	margin: 0 40px;
+	height: 100px;
+}
+#info #item-right{ text-align: right; width: 100%; }
+/*---------------------------------------------------team-----------------------------------------*/
+.team-section{
+	float: left;
+	width: 100%;
+	padding: 20px 0;
+	color: #606060;
+	text-align: center;
+	background-color: #e4e4e4;
+}
+.team-section h2{
+	font-weight: bold;
+	line-height: 80px;
+	background: radial-gradient(circle,#afafaf,#e0e0e0,#e4e4e4);
+}
+.team-section section{
+	max-width: 250px;
+	max-height: 420px;
+	display: inline-block;
+	margin: 0 auto;
+	vertical-align: middle;
+	margin: 40px;
+	background-color: #d8d8d8;
+	padding: 15px;
+	text-align: center;
+}
+.profile{
+	position: relative;
+	height: 200px;
+	width: 200px;
+  	border-radius: 50%;
+  	margin: 10px;
+  	overflow: hidden;
+  	cursor: pointer;
+}
+.profile .middle{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.front,.back{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+  	overflow: hidden;
+	backface-visibility: hidden;
+	position: absolute;
+	transition: transform .6s linear;
+}
+.front{ transform: perspective(600px) rotateY(0deg); }
+.front img{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.back{
+	background: #f1f1f1;
+	transform: perspective(600px) rotateY(180deg);
+}
+.back h5{
+	position: absolute;
+	color: #545454;
+	width: 100%;
+	top: 40px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.back a i{
+	margin: 90px 2px;
+	color: #606060;
+	font-size: 20px;
+	padding: 10px;
+	border-radius: 50%;
+}
+.back a i:hover{
+	background: #606060;
+	color: #fff;
+}
+.profile:hover > .front{ transform: perspective(600px) rotateY(-180deg); }
+.profile:hover > .back{ transform: perspective(600px) rotateY(0deg); }
+.team-section p{
+	color: #717171; 
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.team-section p:hover{
+	white-space: pre-wrap;
+	overflow: visible;
+	cursor: pointer;
+}
+/*-------------------------------------------------contact--------------------------------------------------*/
+.contact-section{
+	width: 100%;
+	height: 450px;
+	float: left;
+	margin-top: 40px;
+	border: 15px solid rgba(60,60,60,0.9);
+	background: url(../images/5.jpg) no-repeat fixed center;
+	background-size: cover;
+}
+.contact-section .left-side{
+	width: 50%;
+	height: 100%;
+	margin: 0;
+	float: left;
+	color: white;
+	background-color: rgba(60,60,60,0.9);
+}
+.left-side h1{
+	margin-top: 10%;
+	margin-bottom: 40px;
+	text-align: center;
+	text-shadow: 2px 2px 5px #9f9f9f;
+}
+.left-side h4{ margin-left: 30px; }
+.contact-section form{
+	width: 50%;
+	height: 100%;
+	float: right;
+	padding: 5px 6%;
+	background-color: rgba(255,255,255,0.6);
+}
+form h2{
+	color: #007dc5;
+	margin: 15px 0;
+	text-align: center;
+	border-bottom: 4px ridge #00a1ff;
+}
+form .input-box{ 
+	position: relative;
+	margin-left: 40px;
+	overflow: hidden;
+}
+form .input-box input,.input-box textarea{
+	color: #00a1ff;
+	width: 90%;
+	border: none;
+	border-bottom: 2px solid #00a1ff;
+	margin: 15px 0;
+	background: transparent;
+}
+.input-box textarea{ background: rgba(47,179,255,0.08); }
+form .input-box span{
+	position: absolute;
+	top: 0;
+	left: 5px;
+	color: #00a1ff;
+	margin: 15px 0;
+	pointer-events: none;
+	transition: .5s;
+}
+form .input-box input:focus ~ span, .input-box textarea:focus ~span, .input-box input:valid ~ span, .input-box textarea:valid ~ span{
+	top: -18px;
+	left: 2px;
+	color: #006aa7;
+	font-size: 13px;
+}
+form .input-box label{
+	content: "";
+	width: 0%;
+	height: 2px;
+	top: 39px;
+	left: 50%;
+	position: absolute;
+	background-color: #006aa7;
+	transition: .6s;
+}
+form .input-box input:focus ~ label, .input-box input:valid ~ label{
+	left: 0px;
+	width: 90%;
+}
+form button{
+	color: #006aa7;
+	margin: 0 60px;
+	width: 100px;
+	height: 40px;
+	border-radius: 20px;
+	border: 1px solid #c1c1c1;
+	z-index: 0;
+	background: linear-gradient(#fff,#afafaf);
+	overflow: hidden;
+	position: relative;
+	transition: 0.5s;
+}
+form button:hover{ color: #fff; }
+form button:focus{
+	outline: none;
+}
+form button::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	z-index: -1;
+	background: linear-gradient(#a3d5fd,#0060ad);
+	transition: 0.5s;
+	bottom: 0;
+	border-radius: 50% 50% 0 0;
+}
+form button:hover::before{
+	height: 140%;
+}
+
+/*--------------------------------------------------Right_Area--------------------------------------*/
+.content .right-area
+{
+	position: relative;
+	float: right;
+	top: -1680px;
+	width: 26%;
+	height: 0;
+	margin-right: 40px;
+}
+.right-area .ads{
+	min-height: 250px;
+	border: 2px solid #666666;
+}
+.right-area .latest-update{
+	min-height: 400px;
+	border: 2px solid #666666;
+	border-radius: 20px;
+	margin-bottom: 30px;
+}
+.right-area .latest-update h3
+{
+	text-align: center;
+	background-color: #666666;
+	color: white;
+	min-height: 40px;
+	line-height: 40px;
+	border-radius: 18px 18px 0 0;
+}
+marquee{ min-height: 400px; }
+.right-area .latest-update ul li
+ {
+ 	list-style: circle;
+ 	height: 40px;
+ 	margin: 15px 0px 0px 30px;
+ }
+
+/*---------------------------------------------------footer----------------------------------------*/
+footer{
+ 	width: 100%;
+ 	height: 200px;
+	float: left;
+ 	margin-top: 40px;
+ 	background-image: url(../images/footer-bg.jpg);
+}
+.foot{ background-color: rgba(0, 53, 78, 0.7); height: 100%; }
+.foot ul{ text-align: center; }
+.foot ul li{
+	display: inline-block;
+	margin: 5px 0px;
+	padding: 0 12px;
+	border-right: 2px solid #afafaf;
+}
+.foot ul li:last-child{ border: none; }
+.foot ul li a {
+	color: #fff;
+}
+.foot .foot-content{ width: 100%; float: left; }
+.foot-content .foot-left{
+	width: 65%;
+	height: 100px;
+	float: left;
+	border-right: 2px solid #afafaf;
+}
+.foot-logo{
+	color: #fff;
+	text-shadow: none;
+}
+footer #copyright{
+	width: 100%;
+	padding: 5px;
+	text-align: center;
+	background-color: #007dc5;
+	color: white;
+}
+
+/*------------------------------------------------------------------------------------------------------------
+											for tablet and small laptops
+-------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 1080px){
+	body{ font-size: 14px; }
+	#topbtn{
+		font-size: 20px;
+	}
+	.logo{
+		font-size: 30px;
+		margin-left: 45px;
+	}
+	nav ul{ margin-right: 15px; }
+	nav ul li{ width: 67px; }
+	nav ul li a{ font-size: 12px; }
+	nav #login{ font-size: 12px; }
+	nav #login:hover{ font-size: 13px; }
+
+	nav ul ul{ width: 92px; }
+	nav ul ul ul{ left: 85px; }
+
+	.maincontent .left-area{ padding: 20px; }
+	#info img{ margin: 0 10px; }
+	.team-section section{ 
+		margin: 18px;
+		padding: 10px;
+		max-width: 200px;
+	}
+	.profile{
+		width: 150px;
+		height: 150px;
+	}
+	.back a i{
+		margin: 75px 2px;
+		font-size: 16px;
+		padding: 7px;
+	}
+	.back h5{ font-size: 16px; }
+	.content .right-area{ 
+		top: -1580px;
+		margin-right: 20px;
+	}
+	form .input-box,form button{ margin-left: 20px; }
+	form .input-box label{ 
+		top: 36px;
+	}
+	form h2{ font-size: 26px; }
+	form .input-box input:focus ~ span, .input-box textarea:focus ~span, .input-box input:valid ~ span, .input-box textarea:valid ~ span{
+		font-size: 11px;
+		top: -15px;
+	}
+	.right-area .latest-update h3, .left-area h3,#info h4,.team-section h4,.left-side h4{ font-size: 20px; }
+}
+
+/*-----------------------------------------------------------------------------------------------------------------
+													For mobile phones
+-----------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 766px){
+	#topbtn{
+		padding: 5px 10px;
+		font-size: 16px;
+	}
+	.menu{
+		position: absolute;
+	}
+	.checkbtn{
+		display: block;
+	}
+	.logo{ 
+		font-size: 27px;
+		margin-left: 40px;
+	}
+	nav{
+		height: 60px;
+		line-height: 60px;
+	}
+	nav ul{
+		position: absolute;
+		width: 240px;
+		padding-bottom: 20px;
+		border-radius: 0px 15px 15px 15px;
+		background: rgba(0, 53, 78, 0.92);
+		top: 60px;
+		left: -100%;
+		transition: all 0.5s;
+	}
+	nav ul li{
+		text-align: center;
+		margin: 0px 85px;
+	}
+	nav ul ul{
+		float: left;
+		top: 0;
+		left: -85px;
+		width: 240px;
+		border-radius: 0;
+		padding-bottom: 0;
+		background: #005e8a8a;
+		border: 1px solid #00354e;
+		box-shadow: none;
+		position: relative;
+	}
+	nav ul ul li{ margin: 0; }
+	nav ul ul ul{
+		margin-left: 80px;
+		width: 90px;
+	}
+	nav ul li a{
+		color: white;
+		font-size: 12px;
+	}
+	nav li:hover > a,nav a.active{
+		color: #007dc5;
+	}
+	nav #login{ box-shadow: 1px 1px 3px black; }
+	nav #login:hover{ box-shadow: 2px 2px 4px black; }
+	#check:checked ~ ul{
+		left: 0;
+	}
+	.carousel{ margin-top: 60px; }
+
+	.maincontent .left-area{ width: 100%; padding: 20px 0; }
+	.left-area h2{
+		border-radius: 0;
+		border-left: 5px solid #007dc5; 
+		height: 45px;
+		line-height: 45px;
+		font-size: 22px;
+	}
+	.about-section, .services-section{ margin-bottom: 25px; }
+	#info h4{ font-size: 16px; }
+	.team-section section{ 
+		padding: 15px;
+		max-width: 250px;
+	}
+	.team-section h2{
+		line-height: 60px;
+		background: #cacaca;
+	}
+	.profile{
+		width: 200px;
+		height: 200px;
+	}
+	.back h5{ font-size: 20px; }
+	.back a i{
+		margin: 90px 2px;
+		font-size: 18px;
+		padding: 10px;
+	}
+	.contact-section{
+		height: 600px;
+		background: #3e3e3e;
+	}
+	.contact-section .left-side{
+		width: 100%;
+		height: 32%;
+		border-radius: 10px;
+		color: #afafaf;
+		background-color: #fff;
+	}
+	.left-side h1{ font-size: 29px; margin: 15px;}
+	.left-side h4{ font-size: 16px; margin-left: 20px; }
+	.contact-section form{
+		width: 100%;
+		float: left;
+		height: 68%;
+		background-color: transparent;
+	}
+	form h2{ font-size: 22px; font-weight: bold; }
+	form .input-box label{ background-color: #c0e6ff; }
+	form .input-box input:focus ~ span, .input-box textarea:focus ~span, .input-box input:valid ~ span, .input-box textarea:valid ~ span{
+		color: #c0e6ff; 
+	}
+	.content .right-area{
+		float: left;
+		top: auto;
+		margin: 20px;
+		width: 90%;
+		height: auto;
+	}
+}

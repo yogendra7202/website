@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans");
+*{
+	padding: 0;
+	margin: 0;
+	outline: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+.background{
+	position: fixed;
+	height: 100%;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+}
+.sticker-img{
+	width: 450px;
+	position: absolute;
+	top: 50%;
+	left: 25%;
+	transform: translate(-50%,-50%);
+}
+.form-container{
+	width: 350px;
+	height: 500px;
+	font-size: 20px;
+	text-align: center;
+	background: #f2f2f2;
+	border-radius: 20px;
+	box-shadow: 2px 2px 6px black;
+	padding: 5px;
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	left: 75%;
+	transform: translate(-50%,-50%);
+}
+.input-group{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	transition: 0.8s;
+}
+.avatar{
+	width: 90px;
+	margin-bottom: 45px;
+}
+.toggle-btn{
+	font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+	color: #4d4d4d;
+	width: 100%;
+	border: none;
+	z-index: 5;
+	background: transparent;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: 0.5s;
+}
+.toggle-btn span{
+	font-size: 18px;
+	color: #0000008a;
+	margin-right: 7px;
+}
+.input-box{
+	margin: 20px 0;
+	position: relative;
+}
+.input-box i{
+	color: #666666;
+	position: absolute;
+	font-size: 16px;
+	margin: 15px 20px;
+}
+.input-box span{
+	font-size: 13px;
+	color: #666666;
+	position: absolute;
+	margin: 18px 0px;
+	margin-left: -30px;
+	cursor: pointer;
+}
+.input-box span:hover{ color: #007dc5; }
+#validation-txt{
+	color: #ff0000;
+	font-weight: bold;
+	position: absolute;
+	font-size: 14px;
+	width: 300px;
+	margin: 8px 25px;
+}
+.input-box input{
+	width: 74%;
+	height: 50px;
+	color: #555555;
+	font-size: 15px;
+	font-weight: 10;
+	padding-left: 45px;
+	padding-right: 10px;
+	border: 1px solid #007dc5;
+	border-radius: 25px;
+	transition: 0.5s;
+}
+#pswd,#pswd1{ padding-right: 35px; }
+.input-box input:focus,.input-box input:valid{
+	width: 80%;
+	box-shadow: 2px 2px 3px #666666;
+}
+.btn{
+	width: 60%;
+	font-size: 18px;
+	color: #fff;
+	margin: 15px 0px 20px 0px;
+	height: 50px;
+	cursor: pointer;
+	font-weight: bold;
+	border-radius: 25px;
+	border: none;
+	box-shadow: 1px 1px 3px #666666;
+	background: linear-gradient(90deg,#00ffdc,#00a1ff,#00ffdc);
+	background-size: 200%;
+	transition: 0.5s;
+}
+.btn:hover{
+	width: 66%;
+	background-position: 100%;
+	box-shadow: 2px 2px 4px #333333;
+}
+.btn:focus{ box-shadow: none; }
+a{
+	color: #666666;
+}
+a:hover{ color: #333; }
+#signup{
+	top: 100%;
+	transition: 0.5s;
+}
+#loginbtn{ 
+	top: 20%;
+	font-size: 24px;
+}
+#loginbtn span{ display: none; }
+#signupbtn{
+	top: 90%;
+	font-size: 13px;
+	color: #fff;
+	cursor: pointer;
+}
+#signupbtn span{ display: inline; }
+.signup{
+	background: linear-gradient(#00a1ff,#00ffdc);
+	height: 400px;
+}
+.signup::before{
+	content: "";
+	position: absolute;
+	left: -50%;
+	top: -66px;
+	background: linear-gradient(#00a1ff,#00ffdc);
+	background-size: 100% 200%;
+	width: 200%;
+	height: 270px;
+	border-radius: 50%;
+}
+.signup .input-box input:focus,.signup .input-box input:valid{
+	box-shadow: 2px 2px 3px #333333;
+}
+.signup .btn{
+	color: #555555;
+	background: linear-gradient(#f3f3f3,#888888);
+}
+.signup .btn:focus{
+	background: linear-gradient(#00ffdc,#00a1ff);
+}
+.signup a:hover{ color: #006eaf; }
+
+@media (max-width: 1080px){
+	.background{ width: 450px; }
+	.sticker-img{
+		width: 360px;
+	}
+	.form-container{
+		width: 320px;
+		height: 460px;
+		font-size: 18px;
+	}
+	.avatar{
+		width: 80px;
+		margin-bottom: 35px;
+	}
+	.input-box i{ font-size: 14px; }
+	.input-box span{
+		font-size: 12px;
+		margin: 17px 0px;
+		margin-left: -28px;
+	}
+	.input-box input,.btn{ height: 45px; }
+	#pswd,#pswd1{ padding-right: 32px; }
+	#validation-txt{
+		font-size: 13px;
+		margin: 8px 10px;
+	}
+	.btn{ margin-top: 5px; }
+	.signup .btn{ margin: 10px 0 15px 0; }
+}
+
+@media (max-width: 780px){
+	body{
+		height: 100vh;
+		background: linear-gradient(125deg,#3fff00d4,#00ffdcd4,#00a6ffd4,#8a00ffd4,#ff00fed4);
+		background-size: 400%;
+		animation: bg-animation 15s infinite;
+	}
+	.background,.sticker-img{
+		display: none;
+	}
+	.form-container{
+		left: 50%;
+	}
+	@keyframes bg-animation{
+		0%{ background-position: 0% 0%; }
+		50%{ background-position: 100% 0%; }
+		100%{ background-position: 0% 0%; }
+	}
+}

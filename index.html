@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rohit</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+	<link rel="shortcut icon" href="icon.png">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+	<button onclick="topFunction()" id="top-btn" title="Go to Top"><i class="fas fa-chevron-up"></i></button>
+
+	<nav>
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<i class="fa fa-bars" aria-hidden="true"></i>
+		</label>
+		<label class="logo">Rohit</label>
+		<ul>
+			<li><a href="#" class="active">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li id="dropdown"><a href="#">Books<i class="fas fa-angle-down"></i></a>
+				<ul>
+					<li id="dropdown"><a href="#">Science<i class="fas fa-angle-right"></i></a>
+						<ul>
+							<li><a href="#">PCM</a></li>
+							<li><a href="#">PCB</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Commerce</a></li>
+					<li><a href="#">Arts</a></li>
+				</ul>
+			</li>
+			<li><a href="#services">Services</a></li>
+			<li><a href="#team">Team</a></li>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="login.html" id="login">Login</a></li>
+		</ul>
+	</nav>
+
+	<div class="carousel slide" data-ride="carousel" data-interval="4000" id="connect" data-pause="false">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="images/1.jpg">
+				<div class="carousel-caption d-none d-md-block">
+					<h3>Image1</h3>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="images/2.jpg">
+				<div class="carousel-caption d-none d-md-block">
+					<h3>Image2</h3>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="images/3.jpg">
+				<div class="carousel-caption d-none d-md-block">
+					<h3>Image3</h3>
+				</div>
+			</div>
+		</div>
+		<a href="#connect" class="carousel-control-next" data-slide="next">
+			<span class="carousel-control-next-icon"></span>
+		</a>
+		<a href="#connect" class="carousel-control-prev" data-slide="prev">
+			<span class="carousel-control-prev-icon"></span>
+		</a>
+		<ul class="carousel-indicators">
+			<li data-target="#connect" data-slide-to="0" class="active"></li>
+			<li data-target="#connect" data-slide-to="1"></li>
+			<li data-target="#connect" data-slide-to="2"></li>
+		</ul>
+	</div>
+
+	<section class="content">
+		<section class="maincontent">
+			<div class="left-area">
+				<div id="about" class="about-section">
+					<h2>About</h2>
+					<label id="info"><h3>Welcome to our Website</h3><br><p>Here You get all information about your syllabus of any competative exam or unvercity exam, Moreover we provide you study material, Notes, Books, Sample paper and all other information.
+					We will make sure that nothing will left in your preparation.<br><br>We will notify you about the exam date, exam circular, admit cards and result latestly and correctly. Your faith is everything for us we are trying our best so that it never breaks.</p></label>
+				</div>
+				<div id="services" class="services-section">
+					<h2>Services</h2>
+					<label id="info">
+						<p><h4><img src="images/figure-1.png">Study material for Every courses.</h4>
+						<h4 id="item-right">Full course of Html<img src="images/html.svg"></h4>
+						<h4><img src="images/css.svg">Learn Full Css</h4>
+						<h4 id="item-right">Full Javascript<img src="images/jquery.png"></h4>
+						<h4><img src="images/bootstrap.svg">Knowledge about whole bootstrap</h4></p>
+					</label>
+				</div>
+			</div>
+			<div id="team" class="team-section">
+				<h2>Our Team</h2>
+				<section>
+					<label class="profile">
+						<div class="front">
+							<img src="team/Rohit.jpg">
+						</div>
+						<div class="back">
+							<a href="#"><i class="fab fa-facebook"></i></a>
+							<a href="#"><i class="fab fa-twitter"></i></a>
+							<a href="#"><i class="fab fa-instagram"></i></a>
+							<h5>Rohit</h5>
+						</div>
+					</label>
+					<h4>Founder & CEO</h4>
+					<p>Hello! myself <b>Rohit</b> and i am the founder of this institute. We are hopeful that you all are satisfied my our services and facility.</p>
+				</section>
+				<section>
+					<label class="profile">
+						<div class="front">
+							<img src="team/Jarvis.jpg">
+						</div>
+						<div class="back">
+							<a href="#"><i class="fab fa-facebook"></i></a>
+							<a href="#"><i class="fab fa-twitter"></i></a>
+							<a href="#"><i class="fab fa-instagram"></i></a>
+							<h5>Jarvis</h5>
+						</div>
+					</label>
+					<h4>Manager</h4>
+					<p>Hello! myself <b>Jarvis</b> and i am working here on the behalf of manager. We are hopeful that you all are satisfied my our services and facility.</p>
+				</section>
+				<section>
+					<label class="profile">
+						<div class="front">
+							<img src="team/Khushboo.jpg">
+						</div>
+						<div class="back">
+							<a href="#"><i class="fab fa-facebook"></i></a>
+							<a href="#"><i class="fab fa-twitter"></i></a>
+							<a href="#"><i class="fab fa-instagram"></i></a>
+							<h5>Khushboo</h5>
+						</div>
+					</label>
+					<h4>Accountant</h4>
+					<p>Hello! myself <b>khushboo</b> and i am working here on the behalf of accountant. We are hopeful that you all are satisfied my our services and facility.</p>
+				</section>
+			</div>
+		</section>
+
+		<div class="right-area">
+			<div class="latest-update">
+				<h3>Latest Updates</h3>
+				<marquee direction="up"><ul>
+					<li><a href="#">Airforce x and y</a></li>
+					<li><a href="#">Pwd office vacancy for various post</a></li>
+					<li><a href="#">Tes-43</a></li>
+					<li><a href="#">NDA</a></li>
+					<li><a href="#">Pan card enrollment</a></li>
+					<li><a href="#">Voter id</a></li>
+				</ul></marquee>
+			</div>
+			<div class="ads">ADS</div>
+		</div>
+		<div id="contact" class="contact-section">
+			<label class="left-side">
+				<h1>Contact Here</h1>
+				<h4><i class="fas fa-phone-square-alt"></i></i>Phno. : +0110 4589635,55942556<br>
+					<i class="fas fa-mobile-alt"></i>Mobile no. : +91 9798995678<br><br>
+					<i class="fas fa-map-marker-alt"></i>Address : C-56/62,House Name,Salarpur<br>Main dadri road, Noida
+				</h4>
+			</label>
+			<form id="contact-form" method="post" action="#">
+				<h2>CONTACT FORM</h2>
+				<div class="input-box">
+					<input type="text" name="name"  required>
+					<span>Name</span>
+					<label></label>
+				</div>
+				<div class="input-box">
+					<input type="email" name="email" required>
+					<span>Email Address</span>
+					<label></label>
+				</div>
+				<div class="input-box">
+					<input type="text" name="sub"  required>
+					<span>Subject</span>
+					<label></label>
+				</div>
+				<div class="input-box">
+					<textarea name="msg" rows="3" required></textarea>
+					<span>Message</span>
+				</div>
+				<button>Send</button>
+			</form>
+		</div>
+	</section>
+
+	<footer>
+		<div class="foot">
+			<ul>
+				<li><a href="#" class="active">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#team">Team</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+			<div class="foot-content">
+				<div class="foot-left">
+					<label class="logo foot-logo">Rohit</label>
+				</div>
+				<div class="feedback">
+					<input type="text" name="feedback">
+				</div>
+			</div>
+		</div>
+		<div id="copyright">Copyrights &copy; rohit.com</div>
+	</footer>
+
+	<script src="js/main.js"></script>
+
+</body>
+</html>
